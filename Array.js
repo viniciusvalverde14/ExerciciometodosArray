@@ -1,33 +1,37 @@
-// declaro uma array chamada numeroCamisa
+// concat = Combina, junta (concatena) dois ou mais arrays, retornando um novo array.
+// Não altera nenhuma array, só mescla todas em uma.
+// exemplo 1
+
+//declaro uma array chamada numeroCamisa
 let numeroCamisa =
-       ['5', '7', '8',
-        '10', '11', '14']
+       ['5 ', '7 ', '8 ',
+        '10 ', '11 ', '14 ']
+
 // declaro outra array chamada times
 let times =
-    ['boca', 'juventude', 'star soccer']
+    ['boca ', 'juventude ', 'star soccer']
 
-// concat = concatena, junta duas arrays    
+//  declaro uma nova array, concatena, juntando as duas    
 let doisJuntos = numeroCamisa.concat (times); 
 
-// declaro a mensagem que vou exibir com os array's
-let mensage = "Eu já usei estes números e já joguei por esses times: " + [doisJuntos] + ".";
+// declaro uma mensagem para exibir os dois juntos 
+let mensageem = "Já usei estes números e joguei por esses times: " + doisJuntos; 
 
 // exibo a mensagem
-console.log(mensage);
+console.log (mensageem);
+
+// saída : [ 5 , 7 , 8 , 10 , 11 ,14 ]  e [boca , juventude , star soccer]
 
 // exemplo 2
+// declaro uma array 
+let posicao = 
+    [ 'meia' , 'ponta' , 'atacante' ]
 
-// declaro array numFav
-let numFav = ['8 ', '10 ', '14 ']
+//concateno, junto as arrays
+let tudoJunto = numeroCamisa.concat (times,posicao);
 
-// declaro array favoritos 
-let favoritos = ['juventude ', 'boca juniors '] 
+// declaro a mensagem que quero exibir
+let mensagem = "Já usei estes numeros, joguei por esses times e nessas posições: " + tudoJunto
 
-// uso concat para concatenar, juntar dois arrays 
-let juntos = numFav.concat(favoritos);
-
-// declaro a minha mensagem e já adiciono o meu concat
-let mensagem = "Mas os meus favoritos são: " + [juntos]
-
-// exibo
-console.log(mensagem);
+console.log(mensagem) // saída: [5 ,7 ,8 ,10 ,11 ,14] [boca ,juventude ,star soccer] [meia,ponta,atacante]
+ 
